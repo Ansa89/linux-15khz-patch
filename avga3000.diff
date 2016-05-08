@@ -54,7 +54,7 @@
  	/* Gigabyte X1300 is DVI+VGA, not DVI+DVI */
  	if ((dev->pdev->device == 0x7142) &&
  	    (dev->pdev->subsystem_vendor == 0x1458) &&
-@@ -1145,6 +1156,14 @@ bool radeon_atom_get_clock_info(struct drm_device *dev)
+@@ -1164,6 +1175,14 @@ bool radeon_atom_get_clock_info(struct drm_device *dev)
  		p1pll->pll_out_max =
  		    le32_to_cpu(firmware_info->info.ulMaxPixelClockPLL_Output);
  
