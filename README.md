@@ -24,6 +24,7 @@ These patches allow you to enable 15KHz video output during boot process.
 * Reboot
 
 NOTES:
+
 1. If you are doing early KMS, you must include the custom EDID file in the initramfs, or you will run into problems
 2. An advantage of using custom EDID is that you can start an X server without any configuration file (AKA: without specifying a modeline as custom resolution)
 3. Currently there isn't a custom EDID for 25KHz, though isn't too difficult to build one
