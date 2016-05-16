@@ -1,6 +1,6 @@
 --- a/drivers/gpu/drm/radeon/atom.c
 +++ b/drivers/gpu/drm/radeon/atom.c
-@@ -1283,13 +1283,16 @@ struct atom_context *atom_parse(struct card_info *card, void *bios)
+@@ -1284,13 +1284,16 @@ struct atom_context *atom_parse(struct card_info *card, void *bios)
  		kfree(ctx);
  		return NULL;
  	}

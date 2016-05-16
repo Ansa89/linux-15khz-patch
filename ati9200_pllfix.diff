@@ -22,7 +22,7 @@
  				p2pll->pll_in_max = 500;
 --- a/drivers/gpu/drm/radeon/radeon_combios.c
 +++ b/drivers/gpu/drm/radeon/radeon_combios.c
-@@ -745,7 +745,8 @@ bool radeon_combios_get_clock_info(struct drm_device *dev)
+@@ -744,7 +744,8 @@ bool radeon_combios_get_clock_info(struct drm_device *dev)
  		/* pixel clocks */
  		p1pll->reference_freq = RBIOS16(pll_info + 0xe);
  		p1pll->reference_div = RBIOS16(pll_info + 0x10);
