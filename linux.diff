@@ -117,7 +117,7 @@
   * @dev: Device to duplicate against
 --- a/drivers/gpu/drm/drm_fb_helper.c
 +++ b/drivers/gpu/drm/drm_fb_helper.c
-@@ -1642,6 +1642,34 @@ struct drm_display_mode *drm_pick_cmdline_mode(struct drm_fb_helper_connector *f
+@@ -1715,6 +1715,34 @@ struct drm_display_mode *drm_pick_cmdline_mode(struct drm_fb_helper_connector *f
  	if (cmdline_mode->rb || cmdline_mode->margins)
  		goto create_mode;
  
@@ -219,10 +219,10 @@
  };
  
  /**
-@@ -2510,6 +2516,10 @@ extern int drm_edid_header_is_valid(const u8 *raw_edid);
- extern bool drm_edid_block_valid(u8 *raw_edid, int block, bool print_bad_edid,
- 				 bool *edid_corrupt);
+@@ -2513,6 +2519,10 @@ extern int drm_edid_header_is_valid(const u8 *raw_edid);
  extern bool drm_edid_is_valid(struct edid *edid);
+ extern void drm_edid_get_monitor_name(struct edid *edid, char *name,
+ 				      int buflen);
 +struct drm_display_mode *drm_mode_find_c15khz(struct drm_device *dev,
 +					      int hsize, int vsize, int fresh);
 +struct drm_display_mode *drm_mode_find_c25khz(struct drm_device *dev,
