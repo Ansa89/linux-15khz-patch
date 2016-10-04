@@ -66,7 +66,7 @@
 +				p2pll->pll_out_min = 50000;
 +		}
 +
- 		if (crev >= 4) {
+ 		if (((frev < 2) && (crev >= 4)) || (frev >= 2)) {
  			p1pll->lcd_pll_out_min =
  				le16_to_cpu(firmware_info->info_14.usLcdMinPixelClockPLL_Output) * 100;
 --- a/drivers/gpu/drm/radeon/radeon_bios.c
