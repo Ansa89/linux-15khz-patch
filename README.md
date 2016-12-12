@@ -17,7 +17,7 @@ These patches allow you to enable 15KHz video output during boot process.
 ### Using a custom EDID
 * Clone the repository
 * Ensure your kernel has been built with `CONFIG_DRM_LOAD_EDID_FIRMWARE` option enabled
-* Copy [edid](edid) to `/lib/firmware`
+* Copy the "[edid](edid)" directory to `/lib/firmware`
 * Add `video=VGA-1:e drm_kms_helper.edid_firmware=VGA-1:edid/_EDID_NAME_` to your bootloader, where
  * `video=VGA-1:e` is needed to enable the connector
  * `drm_kms_helper.edid_firmware=VGA-1:edid/_EDID_NAME_` is needed to force the custom EDID on the connector
