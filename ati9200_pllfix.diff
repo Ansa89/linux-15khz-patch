@@ -1,6 +1,6 @@
 --- a/drivers/gpu/drm/radeon/radeon_clocks.c
 +++ b/drivers/gpu/drm/radeon/radeon_clocks.c
-@@ -242,7 +242,8 @@ void radeon_get_clock_info(struct drm_device *dev)
+@@ -243,7 +243,8 @@ void radeon_get_clock_info(struct drm_device *dev)
  			if (rdev->family >= CHIP_R420) {
  				p1pll->pll_in_min = 100;
  				p1pll->pll_in_max = 1350;
@@ -10,7 +10,7 @@
  				p1pll->pll_out_max = 50000;
  				p2pll->pll_in_min = 100;
  				p2pll->pll_in_max = 1350;
-@@ -251,7 +252,8 @@ void radeon_get_clock_info(struct drm_device *dev)
+@@ -252,7 +253,8 @@ void radeon_get_clock_info(struct drm_device *dev)
  			} else {
  				p1pll->pll_in_min = 40;
  				p1pll->pll_in_max = 500;
