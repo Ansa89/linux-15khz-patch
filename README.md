@@ -7,10 +7,10 @@ These patches allow you to enable 15KHz video output during boot process.
 * Apply patches to your kernel sources
 * Compile and install the patched kernel
 * Add `video=VGA-1:640x480ec` or `video=VGA-1:800x600ez` to your bootloader, where
- * `VGA-1` is the connector name (see the kernel documentation for more info)
- * `640x480`/`800x600` is the resolution you want to force
- * `e` is needed to enable the connector (again, see the kernel documentation for more info)
- * `c`/`z` is needed to force respectively 15KHz/25KHz
+  * `VGA-1` is the connector name (see the kernel documentation for more info)
+  * `640x480`/`800x600` is the resolution you want to force
+  * `e` is needed to enable the connector (again, see the kernel documentation for more info)
+  * `c`/`z` is needed to force respectively 15KHz/25KHz
 * Reboot
 
 
@@ -19,8 +19,8 @@ These patches allow you to enable 15KHz video output during boot process.
 * Ensure your kernel has been built with `CONFIG_DRM_LOAD_EDID_FIRMWARE` option enabled
 * Copy the "[edid](edid)" directory to `/lib/firmware`
 * Add `video=VGA-1:e drm_kms_helper.edid_firmware=VGA-1:edid/_EDID_NAME_` to your bootloader, where
- * `video=VGA-1:e` is needed to enable the connector
- * `drm_kms_helper.edid_firmware=VGA-1:edid/_EDID_NAME_` is needed to force the custom EDID on the connector
+  * `video=VGA-1:e` is needed to enable the connector
+  * `drm_kms_helper.edid_firmware=VGA-1:edid/_EDID_NAME_` is needed to force the custom EDID on the connector
 * Reboot
 
 NOTES:
