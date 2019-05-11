@@ -1,6 +1,8 @@
 # Patches to enable 15KHz video output in linux
 These patches allow you to enable 15KHz video output during boot process.
 
+**IMPORTANT NOTICE:** for a more up to date repository, please check [D0023R/linux_kernel_15khz](https://github.com/D0023R/linux_kernel_15khz) (by [D0023R](https://github.com/D0023R)).
+
 
 ### Using the patches
 * Clone the tag according to your kernel version
